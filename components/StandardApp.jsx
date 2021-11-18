@@ -9,7 +9,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Provider, connect} from 'react-redux';
-
 // Needed for IE11 to avoid 'Promise not defined' error in axios
 import "core-js/stable";
 import "regenerator-runtime/runtime";
@@ -35,8 +34,8 @@ import CoordinatesUtils from '../utils/CoordinatesUtils';
 import MapUtils from '../utils/MapUtils';
 import {UrlParams, resolvePermaLink} from '../utils/PermaLinkUtils';
 import ThemeUtils from '../utils/ThemeUtils';
-
 import './style/App.css';
+
 
 
 class AppInitComponent extends React.Component {
@@ -174,10 +173,10 @@ export default class StandardApp extends React.Component {
         );
     }
     setupTouchEvents = (el) => {
-        el.addEventListener('touchstart', ev => {
-            this.touchY = ev.targetTouches[0].clientY;
-        }, { passive: false });
-        el.addEventListener('touchmove', this.preventOverscroll, { passive: false });
+        // el.addEventListener('touchstart', ev => {
+        //     this.touchY = ev.targetTouches[0].clientY;
+        // }, { passive: false });
+        // el.addEventListener('touchmove', this.preventOverscroll, { passive: false });
     }
     preventOverscroll = (ev) => {
         if (ev.touches[0].touchType !== "direct") {
