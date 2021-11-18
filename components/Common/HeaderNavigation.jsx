@@ -8,7 +8,7 @@ export default function Headernavigation() {
             <nav className="navbar navbar-default">
                 <div className="container-fluid">
                     <div className="navbar-header">
-                        <Link className="navbar-brand" to="/map">QGIS SYSTEM</Link>
+                        <Link className="navbar-brand" to="/">QGIS SYSTEM</Link>
                     </div>
                     <ul className="nav navbar-nav">
                         <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="#">Navigate
