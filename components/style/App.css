@@ -28,7 +28,7 @@ input, select, button, textarea {
 textarea, input:not([type=checkbox]):not([type=radio]):not([type=range]) {
     -webkit-appearance: none;
     cursor:text;
-    padding: 0.25em;
+    padding: 0;
 }
 
 /** Range slider **/
@@ -202,3 +202,16 @@ span.react-numeric-input > b {
 span.react-numeric-input > b:hover {
     background: @button_hover_bg@!important;
 }
+
+.feature-page .content,.MapFeature-page .content {
+    margin-top: 50px;
+    position: absolute;
+}
+.feature-page table.table,.MapFeature-page table.table{margin:20px;}
+.feature-page table tr.table-active,.MapFeature-page table tr.table-active {
+    background: #eee;
+}
+.MapFeature-page .content{
+    margin-left: 100px;
+}
+.MapFeature-page table.table td{padding:5px 10px;}

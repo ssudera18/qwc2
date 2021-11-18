@@ -79,9 +79,12 @@ class MapCopyright extends React.Component {
             return null;
         }
         return (
-            <div id="MapCopyright">
-                {copyrights}
+            <div id="copyright">
+                testing
             </div>
+            // <div id="MapCopyright">
+            //     {copyrights}
+            // </div>
         );
     }
 }
