@@ -18,6 +18,8 @@ import Icon from '../components/Icon';
 import {Swipeable} from '../components/Swipeable';
 import ConfigUtils from '../utils/ConfigUtils';
 import LocaleUtils from '../utils/LocaleUtils';
+import { Link } from "react-router-dom";
+import Headernavigation from '../components/Common/HeaderNavigation';
 import './style/TopBar.css';
 
 
@@ -81,9 +83,11 @@ class TopBar extends React.Component {
         searchOptions.minScaleDenom = searchOptions.minScaleDenom || searchOptions.minScale;
         delete searchOptions.minScale;
         return (
+
             <Swipeable
                 onSwipedDown={() => this.props.toggleFullscreen(false)}
                 onSwipedUp={() => this.props.toggleFullscreen(true)}>
+                <Headernavigation />
                 <div className={classes} id="TopBar" ref={this.storeHeight}>
                     {logoEl}
                     <div className="center-span">
