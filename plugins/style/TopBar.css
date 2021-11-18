@@ -1,7 +1,7 @@
 #TopBar {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 50px;
     right: 0;
     height: 3.5em;
     color: @panel_fg@;
@@ -83,4 +83,16 @@
     color: white;
     border-color: white;
     background-color: inherit;
+}
+
+.Custom-Menu{
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 100;
+    color: #595959;
+    backdrop-filter: blur(3px);
+    position: absolute;
+    z-index: 101;
+    height: 50px;
+    width: 100%;
+    padding: 0;
 }
